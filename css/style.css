@@ -735,8 +735,8 @@ body {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, 1fr);
-  gap: 41px;
   align-items: center;
+  gap: 41px;
 }
 .company__btn {
   width: 129px;

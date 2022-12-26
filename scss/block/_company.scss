@@ -3,7 +3,6 @@
   background-color: $MirageBlue;
   background-image: url("../../img/work-bg.png");
   background-repeat: no-repeat;
-  //   z-index: 1000;
   background-position-x: 40px;
   background-position-y: -30px;
 }
@@ -40,11 +39,12 @@
   &__logo {
     margin-left: 131px;
     width: 60%;
+
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
-    gap: 41px;
     align-items: center;
+    gap: 41px;
   }
   &__test {
   }
