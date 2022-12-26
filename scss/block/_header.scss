@@ -1,0 +1,66 @@
+.header {
+  background-image: url("../../img/hero-bg-img.png");
+  background-repeat: no-repeat;
+  background-size: 500px;
+  background-position-x: 849px;
+
+  padding: 45px 0 0;
+  &__content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__box {
+    display: flex;
+    align-items: center;
+    gap: 64px;
+  }
+  &__list {
+    display: flex;
+    gap: 40px;
+  }
+  &__link {
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 18px;
+
+    color: $SanJuanBlue;
+
+    mix-blend-mode: normal;
+    opacity: 0.7;
+    &:hover {
+      color: $SanJuanBlue;
+      opacity: 1;
+    }
+  }
+  &__btn {
+    margin-right: 30px;
+  }
+  &__hamburger {
+    display: none;
+  }
+
+  &__btn,
+  &__btn--menu {
+    @include btn;
+  }
+
+  @media only screen and (max-width: 426px) {
+    &__list {
+      display: none;
+    }
+    &__btn {
+      display: none;
+    }
+    &__hamburger {
+      display: flex;
+    }
+  }
+  @media only screen and (max-width: 769px) {
+    background-image: url("../../img/hero-bg-table.png");
+    background-repeat: no-repeat;
+    background-size: 766px;
+    background-position-y: 0px;
+    background-position-x: 0px;
+  }
+}

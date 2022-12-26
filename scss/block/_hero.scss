@@ -1,0 +1,149 @@
+.section__hero {
+  background-image: url("../../img/hero-bg-img.png");
+  background-repeat: no-repeat;
+  background-size: 500px;
+  background-position-x: 850px;
+  background-position-y: -100px;
+  z-index: 12;
+  // position: relative;
+}
+.hero {
+  display: flex;
+  align-items: center;
+  &__content {
+    width: 50%;
+  }
+  &__title {
+    font-family: "DM Serif Display";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 72px;
+    line-height: 72px;
+
+    letter-spacing: -0.553846px;
+
+    color: $SanJuanBlue;
+  }
+  &__email {
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 18px;
+
+    color: $SanJuanBlue;
+
+    mix-blend-mode: normal;
+    opacity: 0.5;
+
+    padding: 16px 106px 16px 27px;
+    border: transparent;
+    background: $LinkWaterWhite;
+    box-shadow: 10px 10px 25px -10px rgba(54, 83, 107, 0.25);
+    border-radius: 24px;
+    z-index: -10;
+    outline: none;
+  }
+  &__button {
+    position: absolute;
+    margin-left: -40px;
+    z-index: 100;
+    opacity: 1;
+    @include btn;
+  }
+  &__text {
+    margin: 16px 0 0 27px;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 18px;
+
+    color: $LightSanJuanBlue;
+  }
+  &__subtext {
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 18px;
+
+    color: $LightSanJuanBlue;
+  }
+  &__box {
+    z-index: 100;
+    width: 50%;
+  }
+  &__img {
+    margin-left: 133px;
+    width: 60%;
+  }
+  @media only screen and (max-width: 769px) {
+    flex-direction: column-reverse;
+    width: 100%;
+    &__img {
+      text-align: center;
+      width: 60%;
+      margin: 48px 0 0 80px;
+    }
+    &__content {
+      width: 65%;
+    }
+    &__title {
+      width: 101%;
+
+      padding: 0;
+      font-weight: 400;
+      font-size: 48px;
+      line-height: 56px;
+    }
+    &__box {
+      display: flex;
+      align-items: center;
+    }
+    &__text {
+      text-align: center;
+    }
+  }
+  @media only screen and (max-width: 426px) {
+    &__content {
+      width: 80%;
+    }
+    &__title {
+      text-align: center;
+      width: 95%;
+      font-weight: 400;
+      font-size: 32px;
+      line-height: 36px;
+    }
+
+    &__email {
+      width: 105%;
+      border-radius: 24px;
+      margin-bottom: 16px;
+    }
+    &__img {
+      width: 80%;
+      margin: 30px 0 0 40px;
+    }
+    &__button {
+      margin: 0;
+      width: 84%;
+    }
+    &__text {
+      margin-top: 65px;
+    }
+  }
+}
+@media only screen and (max-width: 769px) {
+  .section__hero {
+    background-image: url("../../img/hero-bg-table.png");
+    background-repeat: no-repeat;
+    background-size: 766px;
+    background-position-y: -60px;
+    background-position-x: 0px;
+  }
+}
+@media only screen and (max-width: 426px) {
+  .section__hero {
+    background-image: url("../../img/hero-bg-mobi.png");
+    background-repeat: no-repeat;
+    background-size: 428px;
+    background-position-y: -105px;
+    background-position-x: 0px;
+  }
+}
